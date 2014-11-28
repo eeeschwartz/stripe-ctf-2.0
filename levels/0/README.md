@@ -8,6 +8,16 @@ knew how to [crack safes](http://en.wikipedia.org/wiki/Safe-cracking)...
 # Running
 
 - Install node and npm (see http://nodejs.org/)
+- `fig build`
+
+```
+fig run web node -v
+v0.10.33
+fig run web npm -v
+2.1.9
+```
+
+- `fig run web npm install .` # the docker npm install doesn't install to current dir somehow, this works for now
 - Run `npm install` from this directory to install dependencies
-- Run `node level00.js` to start the server on port 3000
+- Run `fig up` to start the server on port 3000
 - Go to [http://localhost:3000](http://localhost:3000) in your browser

@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: node level00.js
+  volumes:
+    - .:/myapp
+  ports:
+    - "3000:3000"

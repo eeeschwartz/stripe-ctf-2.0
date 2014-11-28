@@ -2,6 +2,7 @@
 // Run as 'node level00.js'
 
 var express = require('express'), // Web framework
+    bodyParser = require('body-parser'),
     mu = require('mu2'),          // Mustache.js templating
     sqlite3 = require('sqlite3'); // SQLite (database) driver
 
@@ -19,7 +20,7 @@ db.run(
 
 // Create the server
 var app = express();
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 function renderPage(res, variables) {
   var stream = mu.compileAndRender('level00.html', variables);
