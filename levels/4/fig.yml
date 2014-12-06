@@ -1,0 +1,14 @@
+web:
+  build: .
+  command: ./srv.rb
+  volumes:
+    - .:/myapp
+  ports:
+    - "4567:4567"
+casper:
+  image: cmfatih/phantomjs
+  command: bash -c 'cd myapp && casperjs /myapp/browser.coffee http://web:4567'
+  volumes:
+    - .:/myapp
+  links:
+    - web

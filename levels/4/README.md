@@ -12,13 +12,9 @@ The password for **karma_fountain**'s account will give you access to Level 5.
 
 # To run
 
-- Install bundler: `gem install bundler`
-- Run srv.rb: `./srv.rb`
-- Point your browser to [http://localhost:4567](http://localhost:4567)
+- `fig up web`
+- point your browser to http://your-boot2docker-ip:4567
+- the karma_fountain user is a headless browser that you can run via `fig up fountain`.
+  This kill the web server so run `fig up web` to restart it and use the karma trader app again yourself
 
-## Karma Fountain
 
-We used [CapserJS](http://casperjs.org/) on top of
-[PhantomJS](http://phantomjs.org/) to power the **karma_fountain** user. Run
-`capserjs browser.coffee http://localhost:4567` to start it up. It expects to
-find the password from the filesystem `public_html/password.txt`.
