@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: ./srv.rb
+  volumes:
+    - .:/myapp
+  ports:
+    - "4567:4567"
