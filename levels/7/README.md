@@ -28,3 +28,9 @@ found under `templates/`.
 The provided API client requires the `requests` module, which can be installed
 from pip with `pip install requests`. The server requires modules `flask` and
 `bcrypt`, which can be installed from pip with `pip install flask py-bcrypt`.
+
+## To run
+`fig run web`
+
+# to use API client:
+`fig run web python client.py ENDPOINT USER_ID SECRET WAFFLE LAT LONG`

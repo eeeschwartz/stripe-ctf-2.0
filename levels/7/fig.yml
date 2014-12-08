@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: python wafflecopter.py
+  ports:
+      - "9233:9233"
+  volumes:
+      - .:/app
