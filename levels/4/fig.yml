@@ -5,7 +5,7 @@ web:
     - .:/myapp
   ports:
     - "4567:4567"
-casper:
+fountain:
   image: cmfatih/phantomjs
   command: bash -c 'cd myapp && casperjs /myapp/browser.coffee http://web:4567'
   volumes:

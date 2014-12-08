@@ -14,7 +14,6 @@ The password for **karma_fountain**'s account will give you access to Level 5.
 
 - `fig up web`
 - point your browser to http://your-boot2docker-ip:4567
-- the karma_fountain user is a headless browser that you can run via `fig up fountain`.
-  This kill the web server so run `fig up web` to restart it and use the karma trader app again yourself
+- the karma_fountain user is a headless browser that you can run via `fig run fountain`
 
 
