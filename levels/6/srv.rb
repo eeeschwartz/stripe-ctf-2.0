@@ -76,6 +76,7 @@ machine, for example, can only talk directly to the Streamer server itself!",
   end
 
   class StreamerSrv < Sinatra::Base
+    set :public_folder, File.dirname(__FILE__) + '/public'
     set :environment, :production
     enable :sessions
 

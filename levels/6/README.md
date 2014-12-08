@@ -21,13 +21,7 @@ application so that other people can run their own Streamer instances.
 
 # To run
 
-- Install bundler: `gem install bundler`
-- Run srv.rb: `./srv.rb`
-- Point your browser to [http://localhost:4567](http://localhost:4567)
+- `fig up web`
+- Point your browser to http://your-boot2docker-ip:4567
+- Mimic the level07-password-holder logging on by running `fig run passwordholder`
 
-## level07-password-holder
-
-We used [CapserJS](http://casperjs.org/) on top of
-[PhantomJS](http://phantomjs.org/) to power the **level07-password-holder**
-user. Run `capserjs browser.coffee http://localhost:4567` to start it up. It
-expects to find the password from the filesystem `public_html/password.txt`.
